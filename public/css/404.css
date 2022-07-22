@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/bg.png');
+
+    background-size: cover;
+}
+
+.error_404-mob {
+    display: none;
+} 
+
+
+@media(max-width: 990px) {
+    .error_404-desk {
+        transform: scale(.7);
+    } 
+}
+
+@media(max-width: 700px) {
+    .error_404-desk {
+        display: none;
+    } 
+
+    .error_404-mob {
+        display: block;
+        transform: scale(.8);
+    } 
+}
+
+@media(max-width: 560px) {
+    .error_404-mob {
+        display: block;
+        transform: scale(.5);
+    } 
+}
+

@@ -1,0 +1,155 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.1s linear;
+}
+
+::-webkit-scrollbar-track {
+    background: #33333300;
+    border-left: 1px solid #000;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border: 1px solid #000;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.bac-btn {
+    border: 1px solid #aadbe1;
+
+    position: absolute;
+    left: -150px;
+    top: 400px;
+    padding: 35px 35px 35px 0;
+    z-index: 100;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    transition: all 0.2s ease-out;
+    background-color: #fff;
+}
+
+.bac-btn-inner {
+    position: relative;
+}
+
+.bac-btn-item-svg {
+    transition: all 0.2s linear;
+}
+
+.bac-btn-item {
+    padding: 15px 7px 15px 17px;
+    position: absolute;
+    right: -87px;
+    border: 1px solid #aadbe1;
+    border-left: 0px solid #fff;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+}
+
+.container-inner {
+    overflow: hidden;
+    width: 100%;
+    padding: 25px 40px 15px;
+    position: relative;
+}
+
+.container-bg {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-size: 100%;
+    background-color: #fff;
+    background-blend-mode: color;
+    background-image: url("/img/bg.png");
+    z-index: -10;
+}
+
+.container-bg-object-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate3d(20%, -30%, 0);
+    width: 1000px;
+    height: 220px;
+    border-radius: 45% 55% 32% 68% / 37% 60% 40% 63%;
+    background-color: #f6e4dd;
+    filter: blur(90px);
+}
+
+.container-bg-object-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate3d(-50%, 260%, 0);
+    width: 900px;
+    height: 280px;
+    border-radius: 45% 55% 32% 68% / 37% 60% 40% 63%;
+    background-color: #3878778c;
+    filter: blur(100px);
+}
+
+.container-bg-object-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(20%, 20%, 0);
+    width: 700px;
+    height: 160px;
+    border-radius: 45% 55% 32% 68% / 37% 60% 40% 63%;
+    background-color: rgb(243, 178, 178, 0.75);
+    filter: blur(100px);
+}
+
+.container-bg-green {
+    width: 100%;
+    height: 100%;
+    background-color: #84b9c0;
+}
+
+.container-bg-mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #84b9c0;
+    z-index: -100;
+    opacity: 0;
+}
+
+.container-bg-mob-active {
+    z-index: 100;
+    opacity: 1;
+}
+
+
+

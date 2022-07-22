@@ -1,0 +1,361 @@
+.projectView {
+    margin-top: 25px;
+    padding-bottom: 150px;
+}
+
+.projectView-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #d0d0d0;
+    font-size: 16px;
+}
+
+.projectView-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 50px;
+    height: 1px;
+    background-color: #d0d0d0;
+}
+
+.projectView-title-item {
+    text-align: right;
+    width: 200px;
+}
+
+.projectView-title-item + .projectView-title-item {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.projectView-name {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+
+.projectView-name-object-box {
+    position: absolute;
+    left: -22px;
+    top: -7px;
+    width: 50px;
+    height: 50px;
+}
+
+.projectView-name-object {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: -10;
+}
+
+.projectView-name-object-item {
+    display: none;
+    fill: rgb(1, 195, 17);
+}
+
+.projectView-name-text {
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    font-size: 36px;
+    transform: translateX(50px);
+}
+
+.projectView-name-text-item {
+    white-space: nowrap;
+}
+
+.projectView-info-item-mob {
+    display: none;
+}
+
+.projectView-info {
+    margin: 60px auto 0;
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectView-info-item:nth-child(2) {
+    max-width: 550px;
+    width: 100%;
+}
+
+.projectView-info-item-title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.projectView-info-item-content {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #747474;
+    word-wrap: anywhere;
+}
+
+.projectView-view-img {
+    max-width: 670px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.view-item-wind {
+    border: 1px solid #000;
+    position: relative;
+    padding-bottom: 37px;
+}
+
+.view-item-wind::after {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.view-item-wind-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+    background-color: #f3b2b2;
+    border-bottom: 1px solid #000;
+}
+
+.view-item-wind-title-behance svg {
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.view-item-wind-photo {
+    display: flex;
+    align-items: center;
+    padding: 15px 27px 27px;
+}
+
+.view-item-wind-img {
+    width: 100%;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.view-item-wind-slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 32px;
+    width: 150px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #f3b2b2;
+    transition: all 0.3s ease-out;
+}
+
+.content-item-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.item-buttons-btn {
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+}
+
+.item-buttons-btn:hover {
+    color: #aadbe1;
+}
+
+.item-wind-title-icon {
+    margin: 10px 10px 5px 0;
+}
+
+.view-item-wind-slider-icon {
+    position: relative;
+    height: 14px;
+    width: 1px;
+    background-color: #000;
+}
+
+.view-item-wind-slider-icon::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    height: 14px;
+    width: 1px;
+    background-color: #000;
+}
+
+.view-item-wind-slider-icon::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    height: 14px;
+    width: 1px;
+    background-color: #000;
+}
+
+.view-item-buttons-btn {
+    width: 100%;
+    display: flex;
+    font-family: "Space Mono", monospace;
+    font-size: 36px;
+    justify-content: space-around;
+}
+
+.view-item-buttons-btn:hover {
+    color: #aadbe1;
+}
+
+.view-item-buttons-btn + .view-item-buttons-btn {
+    margin-left: 40px;
+}
+
+
+@media(max-width: 1200px) {
+    .projectView-info {
+        max-width: 743px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item-wind-title-icon svg {
+        height: 20px;
+    }
+
+    .item-wind-title-icon {
+        margin: 7px 0px 2px 0;
+    }
+}
+
+@media(max-width: 990px) {
+    .projectView-info {
+        max-width: 630px;
+    }
+
+    .projectView-info-item:nth-child(2) {
+        max-width: 460px;
+    }
+}
+
+@media(max-width: 770px) {
+    
+}
+
+@media(max-width: 560px) {
+    .projectView {
+        padding-bottom: 50px;
+    }
+
+    .projectView-view-img {
+        margin-top: 30px;
+    }
+
+    .view-item-wind-photo {
+        padding: 18px;
+    }
+
+    .view-item-wind-slider {
+        height: 15px;
+        width: 80px;
+    }
+
+    .view-item-wind-slider-icon,
+    .view-item-wind-slider-icon::after,
+    .view-item-wind-slider-icon::before {
+        height: 7px;
+    }
+
+    .view-item-wind::after {
+        bottom: 15px;
+    }
+
+    .view-item-wind {
+        padding-bottom: 15px;
+    }
+
+    .item-wind-title-icon svg {
+        height: 15px;
+    }
+
+    .item-wind-title-icon {
+        margin: 5px -20px 0px 0;
+    }
+
+    .view-item-buttons-btn {
+        font-size: 20px;
+    }
+
+    .projectView-info {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .projectView-info-item {
+        width: 100%;
+    }
+
+    .projectView-info-item:last-child {
+        margin-top: 20px;
+    }
+
+    .projectView-name-text {
+        width: auto;
+        max-width: 100%;
+        transform: translateX(0px);
+    }
+
+    .projectView-name-text-item {
+        display: block;
+        word-wrap: break-word;
+    }
+
+    .projectView-info-item-desc {
+        display: none;
+    }
+
+    .projectView-info-item-mob {
+        display: block;
+    }
+
+    .projectView-info-item-title-mob {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .projectView-info-item-title-svg-mob {
+        margin-left: 6px;
+
+        transition: all .1s linear;
+    }
+
+    .projectView-info-item-title-mob.projectView-info-item-title-mob-active .projectView-info-item-title-svg-mob {
+        transform: rotate(90deg);
+    }
+
+    .projectView-info-item-content-mob {
+        overflow: hidden;
+        height: 0px;
+        transition: all .2s linear;
+    }
+
+    .projectView-info-item-content-mob.projectView-info-item-content-mob-active {
+        height: 100%;
+    }
+    
+}

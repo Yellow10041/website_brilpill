@@ -1,0 +1,253 @@
+.works-main {
+    margin: 85px 40px 0;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.works-title {
+    padding: 5px 0 5px 23px;
+    display: flex;
+    justify-content: space-between;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+
+    background-color: #000;
+}
+
+.works-title-filter {
+    display: flex;
+    padding-right: 40px;
+}
+
+.works-title-filter-item + .works-title-filter-item {
+    margin-left: 120px;
+}
+
+.works-title-filter-item-price-noActive {
+    opacity: 0.5;
+}
+
+.works-title-filter-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.works-title-filter-title-icon {
+    margin-left: 5px;
+    rotate: 90deg;
+    transition: all 0.1s linear;
+}
+
+.works-title-filter-option {
+    height: 0;
+    bottom: 0px;
+    transition: all 0.1s linear;
+}
+
+.works-title-filter-premium {
+    position: relative;
+}
+
+.works-title-filter-premium .works-title-filter-option {
+    overflow: hidden;
+    position: absolute;
+    /* bottom: -100px; */
+    left: -20px;
+    width: 100px;
+    background-color: #000;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.works-title-filter-option-item {
+    cursor: pointer;
+}
+
+.works-title-filter-option-item + .works-title-filter-option-item {
+    margin-top: 15px;
+}
+
+.works-title-filter-title-text-val {
+    display: none;
+}
+
+.works-title-filter-title-text-noActive {
+    opacity: 0.5;
+}
+
+.works-title-filter-new {
+    position: relative;
+}
+
+.works-title-filter-new .works-title-filter-option {
+    overflow: hidden;
+    position: absolute;
+    /* bottom: -65px; */
+    left: -20px;
+    width: 100px;
+    background-color: #000;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.works-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 62px 42px 59px;
+}
+
+.works-content-item {
+    max-width: 330px;
+    width: 330px;
+    margin-bottom: 100px;
+    margin: 20px;
+}
+
+.content-item-wind {
+    border: 1px solid #000;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.content-item-wind::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.item-wind-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+    background-color: #f3b2b2;
+    border-bottom: 1px solid #000;
+}
+
+.item-wind-title-name {
+    font-size: 10px;
+}
+
+.item-wind-content {
+    padding: 15px;
+}
+
+.item-wind-photo {
+    border: 1px solid #000;
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-wind-img {
+    width: 100%;
+}
+
+.item-wind-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 12px;
+    width: 80px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #f3b2b2;
+    transition: all 0.3s linear;
+}
+
+.content-item-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.item-buttons-btn {
+    font-family: "Space Mono", monospace;
+    font-size: 20px;
+}
+
+.item-buttons-btn:hover {
+    color: #aadbe1;
+}
+
+.item-buttons-btn + .item-buttons-btn {
+    margin-left: 40px;
+}
+
+.works-title-filter-form,
+.works-title-filter-price-form {
+    display: none;
+}
+
+@media(max-width: 1200px) {
+    .works-main {
+        margin: 85px 0px 0px;
+    }
+}
+
+@media(max-width: 990px) {
+    .works-content {
+        padding: 30px 0px 59px;
+    }
+
+    .works-content-item {
+        margin: 20px 10px;
+    }
+}
+
+@media(max-width: 770px) {
+    .works-title-filter-item + .works-title-filter-item {
+        margin-left: 17px;
+    }
+}
+
+@media(max-width: 560px) {
+    .works-main {
+        margin: 80px auto;
+    }
+
+    .works-content {
+        padding-top: 0;
+    }
+
+    .item-buttons-btn {
+        font-size: 15px;
+    }
+
+    .item-buttons-btn + .item-buttons-btn {
+        margin-left: 11px;
+    }
+
+    .works-title {
+        padding: 5px 0 5px 10px;
+        flex-wrap: wrap;
+    }
+
+    .works-title-filter {
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 10px;
+        justify-content: space-between;
+    }
+
+    .works-title-filter-item + .works-title-filter-item {
+        margin-left: 0px;
+    }
+
+    
+}
+

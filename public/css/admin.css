@@ -1,0 +1,605 @@
+
+.admin__menu {
+    display: flex;
+    margin-top: 50px;
+}
+
+.admin__menu__item {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.admin__menu__item:hover {
+    color: #1b4848;
+}
+
+.admin__menu__item-active {
+    color: #387877;
+}
+
+.admin__menu__item + .admin__menu__item {
+    margin-left: 20px;
+}
+
+
+.admin__container {
+    display: none;
+}
+
+.admin__container-active {
+    display: block;
+}
+
+.admin-form {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.admin-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-inputs-item {
+    width: 60%;
+}
+
+.admin-inputs-item:first-child {
+    padding-left: 80px;
+    width: 30%;
+}
+
+.admin-input-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.admin-input-item + .admin-input-item {
+    margin-top: 40px;
+}
+
+.admin-input-item-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-input-item-two-inner {
+    margin-top: 40px;
+    width: 50%;
+}
+
+.admin-input-item-two-inner + .admin-input-item-two-inner {
+    margin-left: 30px;
+}
+
+.admin-label {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.admin-input {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5px;
+    padding: 7px;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    box-sizing: border-box;
+}
+
+.admin-input-item-tags {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.admin-input-inner {
+    width: 30%;
+}
+
+.admin-input-inner:last-child {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.admin-input-area {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.admin-input-area::-webkit-scrollbar-track {
+    background: #33333300;
+    border: 1px solid #000;
+    border-left: 2px solid #000;
+    padding-left: 1px;
+}
+
+.admin-input-area::-webkit-scrollbar {
+    width: 20px;
+}
+
+.admin-input-area::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.admin-input-file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+
+.admin-input-file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.admin-input-file-label {
+    text-align: center;
+    width: 100%;
+}
+
+.admin-input-file-label-mob {
+    display: none;
+}
+
+.admin-input-file-name {
+    font-size: 12px;
+}
+
+.admin-submit {
+    margin-top: 20px;
+    padding: 5px 90px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border: 1px solid #000;
+
+    cursor: pointer;
+
+    transition: all .1s linear;
+}
+
+.admin-submit:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.admin-news {
+    position: relative;
+    max-width: 1050px;
+    margin: 40px auto 20px;
+}
+
+.admin-news-title {
+    font-size: 68px;
+    font-style: italic;
+    font-weight: 300;
+    color: #000;
+}
+
+.admin-news-title {
+    font-size: 68px;
+    font-style: italic;
+    font-weight: 300;
+    color: #000;
+}
+
+.admin-news-items {
+    display: flex;
+    margin-left: 100px;
+    flex-wrap: wrap;
+}
+
+.admin-news-item {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.admin-news-item + .admin-news-item {
+    
+}
+
+.admin-news-text {
+    position: relative;
+    width: 360px;
+    height: 380px;
+    padding: 20px 40px 20px 20px;
+
+    border: 1px solid #333;
+}
+
+.admin-news-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+}
+
+.admin-news-input {
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+
+    border: 0px;
+    outline: none;
+    resize: none;
+    word-break:break-word;
+    background-color: transparent;
+}
+
+.admin-news-button {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.admin-news-button-item {
+    margin-top: 20px;
+    padding: 5px 90px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    background-color: transparent;
+    border: 1px solid #000;
+
+    cursor: pointer;
+
+    transition: all .1s linear;
+}
+
+.admin-news-button-item + .admin-news-button-item {
+    margin-left: 50px;
+}
+
+.admin-news-button-item:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.admin-input-geometry {
+    max-height: 350px;
+    padding: 50px 0;
+    overflow-y: scroll;
+}
+
+
+.admin-input-geometry-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-input-geometry-item + .admin-input-geometry-item {
+    margin-top: 80px;
+}
+
+.admin-input-geometry-item svg {
+    width: 100%;
+    height: 100%;
+    max-width: 190px;
+    max-height: 190px;
+    overflow: visible;
+}
+
+.admin-input-geometry-item-active svg path, 
+.admin-input-geometry-item-active svg ellipse, 
+.admin-input-geometry-item-active svg rect {
+    stroke-width: 1px;
+    stroke: #c4c4c4;
+}
+
+.admin-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.admin-check {
+    margin-right: 40px;
+}
+
+.admin-input-hide {
+    display: none;
+}
+
+.admin-change-buttons {
+    width: 100%;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-back {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+
+    transition: all .1s linear;
+}
+
+.admin-back svg {
+    margin-right: 10px;
+}
+
+.admin-back:hover {
+    opacity: .4;
+}
+
+.admin-post-buttons {
+    margin-top: -120px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.admin-post-buttons-item {
+    font-weight: 300;
+    font-size: 24px;
+    padding: 8px 42px;
+    border: 1px solid #000;
+
+    transition: all .1s linear;
+}
+
+.admin-post-buttons-item:hover {
+    opacity: .7;
+}
+
+.admin-post-buttons-item + .admin-post-buttons-item {
+    margin-left: 40px;
+}
+
+.admin-post-buttons-item-remove {
+    background-color: #F09393;
+}
+
+.admin-post-buttons-item-add {
+    background-color: #84B9C0;
+}
+
+.admin-work-buttons {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.admin-news-item-delete {
+    position: absolute;
+    right: -27px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #000;
+    background-color: #F09393;
+}
+
+.admin-input-link {
+    width: 100%;
+}
+
+
+@media(max-width: 1200px) {
+    .admin-inputs-item:first-child {
+        padding-left: 0px;
+    }
+
+    .admin-post-buttons {
+        margin-top: -60px;
+    }
+}
+
+@media(max-width: 990px) {
+    .admin-news-text::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 22px;
+        width: 1px;
+        height: 100%;
+        background-color: #333;
+    }
+
+    .home-slider-admin {
+        margin-top: 50px;
+    }
+
+    .admin-inputs-item {
+        width: 65%;
+    }
+
+    
+}
+
+@media(max-width: 770px) {
+    .admin-inputs {
+        flex-wrap: wrap;
+    }
+
+    .admin-inputs-item:first-child {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .admin-inputs-item {
+        width: 100%;
+    }
+
+    .admin-input-area {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .admin__menu {
+        justify-content: space-between;
+    }
+
+    .admin__menu__item {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .admin-buttons {
+        justify-content: space-between;
+    }
+
+    .admin-check {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .admin-submit {
+        padding: 5px 50px;
+    }
+
+    .admin-news-button-item {
+        padding: 5px 50px;
+    }
+
+    .admin-news-items {
+        margin-left: 0px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 560px) {
+    .admin__menu {
+        position: relative;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    .admin__menu::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -17px;
+        right: -17px;
+        height: 1px;
+        background-color: #387877;
+    }
+
+    .admin__menu__item + .admin__menu__item {
+        margin-left: 0px;
+    }
+
+    .admin__menu__item {
+        width: 50%;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .admin-input-file-label {
+        display: none;
+    }
+
+    .admin-input-file-label-mob {
+        display: block;
+    }
+
+    .admin-input-file-label-mob svg {
+        width: 100%;
+    }
+
+    .admin-input-inner {
+        width: 50%;
+    }
+
+    .admin-input-inner:last-child {
+        margin-left: 10px;
+    }
+
+    .admin-change-buttons {
+        padding-left: 0px;
+    }
+
+    .admin-submit {
+        padding: 5px 20px;
+    }
+
+    .admin-input-item-two-inner + .admin-input-item-two-inner {
+        margin-left: 10px;
+    }
+
+    .admin-news-item {
+        width: 100%;
+    }
+
+    .admin-news-text {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .admin-news-text {
+        box-sizing: border-box;
+    }
+
+    .admin-news-button {
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .admin-buttons, 
+    .admin-post-buttons {
+        flex-wrap: wrap;
+    }
+
+    .admin-post-buttons-item {
+        margin: 20px 20px 0;
+    }
+
+    .admin-post-buttons-item + .admin-post-buttons-item {
+        margin-left: 20px;
+    }
+
+    
+}
